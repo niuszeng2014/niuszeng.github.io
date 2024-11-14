@@ -17,10 +17,24 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+        <tag>RecyclerView</tag>
+      </tags>
   </entry>
   <entry>
     <title>test</title>
     <url>/2024/11/13/test/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>Android</category>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>Android,iOS</tag>
+      </tags>
   </entry>
 </search>
