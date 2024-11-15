@@ -37,4 +37,35 @@
         <tag>Android,iOS</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Android中事件机制</title>
+    <url>/2024/11/13/Android%E4%B8%AD%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6/</url>
+    <content><![CDATA[<p>在 Android 开发中，用户与应用的交互主要通过触摸事件来实现。为了处理这些事件，Android 提供了一套完整的事件分发机制。理解这一机制对于开发高效、响应迅速的应用至关重要。本文将探讨 Android 的事件分发机制，开篇之前先明确一些概念，抽象事件行为的<strong>MotionEvent</strong>，处理链路上的<strong>分发</strong>、<strong>拦截</strong>和<strong>消费</strong>，它们是实现事件处理的基本逻辑单元。</p>
+<h1 id="一、基本概念"><a href="#一、基本概念" class="headerlink" title="一、基本概念"></a>一、基本概念</h1><h3 id="1-MotionEvent"><a href="#1-MotionEvent" class="headerlink" title="1. MotionEvent"></a>1. MotionEvent</h3><p>MotionEvent 是 Android 中用于处理触摸事件的类。它封装了与触摸屏幕相关的所有信息，包括触摸的坐标、触摸的类型、触摸的状态等<br>主要触摸事件类型:<br>    ACTION_DOWN: 用户按下触摸屏幕的事件。<br>    ACTION_UP: 用户抬起手指的事件。<br>    ACTION_MOVE: 用户在屏幕上移动手指的事件。<br>    ACTION_CANCEL: 事件被取消，例如由于系统的其他操作。</p>
+<p>获取触摸点的坐标:<br>    getX(int pointerIndex): 获取指定手指的 X 坐标（相对父视图）。<br>    getY(int pointerIndex): 获取指定手指的 Y 坐标（相对父视图）。<br>    getRawX(): 获取触摸事件的原始 X 坐标（相对于屏幕）。<br>    getRawY(): 获取触摸事件的原始 Y 坐标（相对于屏幕）。</p>
+<center class ="img">
+<img src="../img/event/event1.jpg" alt="图片描述" width="40%" />
+</center>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Android技术</category>
+      </categories>
+      <tags>
+        <tag>Android事件传递机制</tag>
+        <tag>View的事件分发机制</tag>
+      </tags>
+  </entry>
 </search>
